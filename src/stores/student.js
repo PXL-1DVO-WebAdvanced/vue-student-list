@@ -12,7 +12,7 @@ export const useStudentStore = defineStore('students', {
         },
         getPopularStudents: (state) => {
             
-            return state.students.filter((student) => student.popular).slice(0, 3)
+            return state.students.filter((student) => student.isPopular).slice(0, 3)
         },
         getStudentById: (state) => {
             if (!state.students) 
